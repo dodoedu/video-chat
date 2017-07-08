@@ -12,7 +12,14 @@ class App extends Component {
   };
 
   componentDidMount(){
-    this.peer = new Peer({key: 'tx595d94dtlw61or'});
+    // this.peer = new Peer({key: 'tx595d94dtlw61or'});
+    this.peer = new Peer({
+      key: 'tx595d94dtlw61or',
+      config: {'iceServers': [
+        { url: 'stun:stun.l.google.com:19302' }
+      ]}
+    });
+    // this.peer.key = 'tx595d94dtlw61or';
 
     this.peer.on('open', (id) => {
       console.log("My peer ID: " + id);
