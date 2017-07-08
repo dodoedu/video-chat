@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.app {
+    width: 100%;
+}
+
+video {
+    border: 1px solid gray;
+}
+
+.local {
+    width: 80%;
+    max-width: 500px;
+}
+.remote {
+    width: 50%;
+    max-width: 400px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px auto auto auto;
+}
+
+li {
+    text-align: center;
+    margin-top: 1em;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
